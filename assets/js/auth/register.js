@@ -49,8 +49,7 @@ form_register.onsubmit = async (e) => {
 
     // Handle response
     if (response.ok) {
-      const json = await response.json();
-      console.log(json);
+  
       
       SuccessNotification("Account Registered Successfully!!");
       // Success handling (e.g., display success message, redirect to confirmation)
