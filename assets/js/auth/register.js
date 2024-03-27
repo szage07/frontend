@@ -1,4 +1,6 @@
-const url = "http://backend.test"; // Replace with your actual backend URL
+import {url, SuccessNotification,ErrorNotification } from "../utils/utils.js";
+
+// const url = "http://backend.test"; 
 
 const form_register = document.getElementById("form_register");
 
@@ -89,22 +91,22 @@ form_register.onsubmit = async (e) => {
 };
 
 
-function SuccessNotification(message = ""){
-    document.querySelector(".alert-success").classList.remove("d-none");
-    document.querySelector(".alert-success").classList.add("d-block");
-    document.querySelector(".alert-success").innerHTML = "Account Registered Successfully.";
+// function SuccessNotification(message = ""){
+//     document.querySelector(".alert-success").classList.remove("d-none");
+//     document.querySelector(".alert-success").classList.add("d-block");
+//     document.querySelector(".alert-success").innerHTML = "Account Registered Successfully.";
 
-    setTimeout(() => {
-        document.querySelector(".alert-success").classList.add("d-none");
-      }, 10000); 
-}
+//     setTimeout(() => {
+//         document.querySelector(".alert-success").classList.add("d-none");
+//       }, 10000); 
+// }
 
-function ErrorNotification(message = ""){
-    document.querySelector(".alert-danger").classList.remove("d-none");
-    document.querySelector(".alert-danger").classList.add("d-block");
-    document.querySelector(".alert-danger").innerHTML = "Registration unsuccessful !!!";
+// function ErrorNotification(message = ""){
+//     document.querySelector(".alert-danger").classList.remove("d-none");
+//     document.querySelector(".alert-danger").classList.add("d-block");
+//     document.querySelector(".alert-danger").innerHTML = "Registration unsuccessful !!!";
 
-    setTimeout(() => {
-        document.querySelector(".alert-danger").classList.add("d-none");
-      }, 10000); 
-}
+//     setTimeout(() => {
+//         document.querySelector(".alert-danger").classList.add("d-none");
+//       }, 10000); 
+// }
