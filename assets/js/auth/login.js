@@ -27,13 +27,19 @@ form_login.onsubmit = async (e) => {
       const json = await response.json();
       console.log(json);
       
+    
       SuccessNotification("Account Login Successfully!!");
       notification.textContent = "Login successful!";
       
     setTimeout(() => {
         notification.textContent="";
       }, 10000); 
+
+      
+      localStorage.setItem("token", json.token);
       form_login.reset();
+      
+      window.location.pathname = "/dashboard.html";
 
     } else if (response.status === 422) {
       const json = await response.json();
