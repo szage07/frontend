@@ -39,7 +39,7 @@ form_login.onsubmit = async (e) => {
       localStorage.setItem("token", json.token);
       form_login.reset();
       
-      window.location.pathname = "/dashboard.html";
+      window.location.pathname = "/assets/js/dashboard/dashboard.html";
 
     } else if (response.status === 422) {
       const json = await response.json();
