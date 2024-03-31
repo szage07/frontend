@@ -1,3 +1,8 @@
+
+import { createRouter } from "../router/router.js";
+
+createRouter();
+
 const url = "http://backend.test"; 
 
 function SuccessNotification(message = ""){
@@ -20,4 +25,4 @@ function ErrorNotification(message = ""){
       }, 10000); 
 }
 
-export{url,ErrorNotification,SuccessNotification};
+export{url,ErrorNotification,SuccessNotification,createRouter};

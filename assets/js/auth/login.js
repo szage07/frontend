@@ -1,5 +1,7 @@
 import {url, SuccessNotification,ErrorNotification } from "../utils/utils.js";
 
+
+//form register
 const form_login = document.getElementById("form_login");
 const notification = document.getElementById("notification"); // Assuming you have a notification element
 

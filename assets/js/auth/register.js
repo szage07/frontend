@@ -1,4 +1,5 @@
-import {url, SuccessNotification,ErrorNotification } from "../utils/utils.js";
+import {url,SuccessNotification,ErrorNotification } from "../utils/utils.js";
+
 
 // const url = "http://backend.test"; 
 
@@ -37,12 +38,15 @@ form_register.onsubmit = async (e) => {
 
     // Get form data
     const formData = new FormData(form_register);
+    console.log(localStorage.getItem("token"));
 
     // Fetch API user register endpoint
     const response = await fetch(url + "/api/user", {
       method: "POST",
       headers: {
         Accept: "application/json",
+        // Authorization: "Bearer " +   localStorage.getItem("token"),
+        
       },
       body: formData,
     });
@@ -53,31 +57,32 @@ form_register.onsubmit = async (e) => {
       
       SuccessNotification("Account Registered Successfully!!");
       // Success handling (e.g., display success message, redirect to confirmation)
-      alert("Registration successful!");
+      // alert("Registration successful!");
       form_register.reset(); // Reset form
-
+      window.location.pathname = "/assets/index.html";
+      alert(json.message);
     } else if (response.status >= 400 && response.status < 500) {
       // Client errors (4xx)
       const json = await response.json();
-      alert(`Client error: ${json.message}`);
+      // alert(`Client error: ${json.message}`);
       ErrorNotification(json.message);
       
 
     } else if (response.status >= 500 && response.status < 600) {
       // Server errors (5xx)
-      alert("Server error occurred. Please try again later.");
+      // alert("Server error occurred. Please try again later.");
       ErrorNotification(json.message);
 
     } else {
       // Unexpected status codes
-      alert("An unexpected error occurred. Please try again later.");
+      // alert("An unexpected error occurred. Please try again later.");
       ErrorNotification(json.message);
     }
 
   } catch (error) {
     // Handle network errors
     console.error("Network error:", error);
-    alert("Network error occurred. Please try again later.");
+    // alert("Network error occurred. Please try again later.");
     ErrorNotification(json.message);
   } finally {
     // Always enable button and hide loading indicator after request completes
