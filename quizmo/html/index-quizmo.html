@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/quizmo/css copy/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/register(edited).css"> 
+    <link rel="stylesheet" href="/quizmo/css/register-quizmo.css">
+</head>
+<script type="module" src="/quizmo/js/auth/login-quizmo.js"></script>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div  class="col-md-6 col-md-8 col-sm-10  login-container">
+            <h1 class="text-center">QUIZMO</h1>
+            <h2 class="text-center mb-4">Login</h2>
+            <form id="form_login">
+              <div id="notification" class="notification"> </div>
+
+              <div class="alert alert-success d-none" role="alert">
+              </div>
+              <div class="alert alert-danger d-none" role="alert">
+                </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+              </div>
+              <div class="form-group mt-2">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control"  name="password" id="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group mt-2">
+                <div class="form-check ">
+                <input type="checkbox" class="form-check-input" id="remember_me">
+                <label class="form-check-label" for="remember_me">Remember Me</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            <p class="text-center mt-3">Don't have an account? <a href="register-quizmo.html">Click here</a></p>
+            <p class="text-center mt-3"><a href="#">Forgot Password?</a></p>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="/quizmo/js/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

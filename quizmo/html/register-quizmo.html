@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/quizmo/css copy/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/register(edited).css"> 
+    <link rel="stylesheet" href="/quizmo/css/register-quizmo.css">
+   
+</head>
+<script type="module" src="/quizmo/js/auth/register-quizmo.js"></script>
+<body>
+    <div class="container-fluid">
+        <!-- <h1 class="text-center">QUIZMO</h1> -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10 register-container">
+              <h1 class="text-center">QUIZMO</h1>
+              <h1></h1>
+                <h2 class="text-center mb-4">Create Account</h2>
+                <form id="form_register">
+                    <div class="alert alert-success d-none" role="alert"></div>
+                    <div class="alert alert-danger d-none" role="alert"></div>
+                    <div class="form-group mb-3">
+                        <label for="firstname">Firstname:</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter firstname" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="lastname">Lastname:</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter lastname" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password_confirmation">Confirm Password:</label>
+                        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirm password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4">Create Account</button>
+                </form>
+                <p class="text-center mt-3">Already have an account? <a href="/quizmo/html/index-quizmo.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/quizmo/js/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
