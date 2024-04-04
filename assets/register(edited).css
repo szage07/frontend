@@ -23,6 +23,13 @@ body {
   }
   .spinner-button {
     position: relative; /* Allow for spinner positioning */
+    
+  }
+  .spinner-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust as needed */
   }
   
   .spinner-button::after {
