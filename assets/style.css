@@ -1,0 +1,16 @@
+  /* Registration container styles */
+  .login-container {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    border: 2px solid aqua; /* Aqua border */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .notification {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid aqua;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+  }
+  

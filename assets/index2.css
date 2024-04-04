@@ -1,0 +1,32 @@
+.floating-label {
+    position: relative; /* Enable absolute positioning for the label */
+  }
+  
+  .floating-label input[type="text"] {
+    padding-left: 20px; /* Adjust padding to accommodate the label */
+  }
+  
+  .floating-label label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); /* Center the label vertically */
+    z-index: 1; /* Ensure label stays above the input field */
+    color: #999; /* Gray color for unfocused label */
+    font-size: 0.8rem; /* Adjust label font size */
+    transition: 0.2s ease-in-out; /* Smooth transition for label movement */
+  }
+  
+  .floating-label input:focus + label,
+  .floating-label input[type="text"]:not(:placeholder-shown) + label {
+    top: 0; /* Move label up on focus or when text is entered */
+    font-size: 0.7rem; /* Adjust label font size when shrunk */
+    color: aqua; /* Change label color to match your theme (optional) */
+  }
+
+  
+  .form-control {
+    background-color:white; /* Set desired background color for the input field */
+    color:black; /* Set desired text color for the input field */
+  }
+  
