@@ -1,0 +1,59 @@
+/* Global styles for dark theme */
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  /* Registration container styles */
+  .register-container {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    border: 2px solid aqua; /* Aqua border */
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .name-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name-field {
+    flex: 1;
+    margin: 5px;
+  }
+  
+  /* Primary button styles */
+  .btn-primary {
+    background-color: aqua; /* Aqua background */
+    color: black;        /* Black text */
+    border-color: transparent; /* Remove border */
+    width: 100%;         /* Full width */
+    text-align: center;  /* Center text */
+  }
+  .spinner-button {
+    position: relative; /* Allow for spinner positioning */
+    
+  }
+  .spinner-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust as needed */
+  }
+  
+  .spinner-button::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid aqua; /* Match your button color */
+    border-top-color: transparent;
+    animation: spinner 0.8s linear infinite;
+    margin-left: 10px; /* Adjust spacing as needed */
+  }
+  
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
