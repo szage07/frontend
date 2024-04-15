@@ -8,10 +8,15 @@ body {
 /* Registration container styles */
 .register-container {
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    border: 2px solid aqua; /* Aqua border */
+    border: 5px groove aqua; /* Aqua border */
     border-radius: 10px;
     padding: 20px;
+    
 }
+#logout_btn{
+    font-weight: bold;
+}
+
 
 /* Primary button styles */
 .btn-primary {

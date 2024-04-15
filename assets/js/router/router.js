@@ -4,11 +4,12 @@ function createRouter(){
             case "/":
                 case "/assets/index.html":
                     case "/assets/register(edited).html":
+                        case "/assets/register.html":
                         case "http://127.0.0.1:5500/":
                             case "/assets/":
 
                 if (localStorage.getItem("token")) {
-                    window.location.pathname = '/assets/js/dashboard/dashboard.html'
+                    window.location.pathname = '/assets/sample_dashboard.html'
                 }
                 break;
             case "/assets/js/dashboard/dashboard.html":

@@ -1,16 +1,27 @@
   /* Registration container styles */
   .login-container {
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    border: 2px solid aqua; /* Aqua border */
+    border: 5px groove aqua; /* Aqua border */
     border-radius: 10px;
     padding: 20px;
   }
   .notification {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid aqua;
+    border: 3px groove aqua;
     background-color: black;
     color:white;
     border-radius: 5px;
+  }
+  h2 {
+    background-color: aqua; /* Aqua background */
+    color: black;        /* Black text */
+    border-color: transparent; /* Remove border */
+    width: 100%;         /* Full width */
+    text-align: center;  /* Center text */
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+   
   }
   
