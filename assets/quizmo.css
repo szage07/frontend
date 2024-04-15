@@ -1,0 +1,17 @@
+.scratch{
+    background-color: black;
+}
+
+
+.rounded-top-custom {
+    border-top-left-radius: 60px; /* Adjust the radius value as needed */
+    border-top-right-radius: 60px; /* Adjust the radius value as needed */
+}
+
+#first{
+    height: 210px;
+}
+
+#second{
+    height: 722px;
+}
